@@ -8,7 +8,7 @@
 // @match        https://chan.sankakucomplex.com/*
 // @grant        none
 // @run-at       document-end
-// @updateURL    https://ohshitnima.github.io/chan_sankakucomplex.js
+// @updateURL    https://ohshitnima.github.io/chan_sankakucomplex.user.js
 // ==/UserScript==
 
 (function() {
