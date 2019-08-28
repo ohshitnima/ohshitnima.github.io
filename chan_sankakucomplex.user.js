@@ -82,6 +82,7 @@
         for(var i = 0 ; i < toop.length ; i++){
             var idUrl = "/post/show/" + toop[i].getAttribute('id').split('p')[1];
             Addcopyimg(idUrl, toop[i].getAttribute('id'));
+            wswm$("div.content").css("width","80%");
         }
     }
 
