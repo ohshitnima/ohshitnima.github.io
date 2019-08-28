@@ -27,6 +27,7 @@
                         wswm$(mutations[i].addedNodes[j]).find("span").each(function(){Addcopyimg(wswm$(this).children("a").attr("href"),wswm$(this).attr("id"));
                                                                                        wswm$(this).css({"width": "330px","height": "320px"});
                                                                                        var tmp = wswm$(this).children("a").children("img");
+                                                                                       wswm$(this).children("a").attr("target","_blank");
                                                                                        tmp.css("width",tmp.width()*2);
                                                                                        tmp.css("height",tmp.height()*2);
                                                                                       });
