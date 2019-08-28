@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         chan 爬虫
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  去除广告放大试图
+// @version      0.2
+// @description  去除广告放大视图
 // @author       无始无名
 // @require      http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js
 // @match        https://chan.sankakucomplex.com/*
 // @grant        none
 // @run-at       document-end
-// @updateURL 
+// @updateURL    https://github.com/ohshitnima/-js/blob/master/chan_sankakucomplex.js
 // ==/UserScript==
 
 (function() {
