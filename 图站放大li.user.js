@@ -18,7 +18,7 @@
     var scale_wswm = 2;
     var content_width=wswm$("div.content").width();
     var int_num = (content_width-content_width%320)/320;
-    scale_wswm= int_num+(content_width%320)/(int_num*320);
+    scale_wswm= 2+(content_width%320)/(int_num*320);
     var width_wswm=150*scale_wswm;
     wswm$("div.inner").css({"width":width_wswm+20+'px',"height": width_wswm+'px'});
     wswm$("ul#post-list-posts li").css("width",width_wswm+10+'px');
