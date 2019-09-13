@@ -14,22 +14,30 @@
 (function() {
     'use strict';
     
-    var wswm$=jQuery.noConflict();
+        var wswm$=jQuery.noConflict();
     var scale_wswm = 2;
     var content_width=wswm$("div.content").width();
+    console.log(content_width);
     var int_num = (content_width-content_width%320)/320;
-    scale_wswm= 2+(content_width%320)/(int_num*320);
+    if(int_num<2){
+        wswm$("div.content").css("width","80%");
+        content_width=wswm$("div.content").width();
+        int_num = (content_width-content_width%320)/320;
+        scale_wswm = content_width/640;
+    }
+    else{
+        scale_wswm= 2+(content_width%320)/(int_num*320);}
     var width_wswm=150*scale_wswm;
     wswm$("div.inner").css({"width":width_wswm+20+'px',"height": width_wswm+'px'});
     wswm$("ul#post-list-posts li").css("width",width_wswm+10+'px');
     wswm$("a.thumb img").each(function(){
         wswm$(this).css("width",wswm$(this).width()*scale_wswm);
         wswm$(this).css("height",wswm$(this).height()*scale_wswm);
-                                        });
+    });
     wswm$("a.directlink").each(function(){
         wswm$(this).css("height",wswm$(this).height()*scale_wswm);
         wswm$(this).attr("target","_blank");
         wswm$(this).children(0).css("font-size",10*scale_wswm+"px");
-    })
+    });
     // Your code here...
 })();
