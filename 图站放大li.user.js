@@ -15,7 +15,7 @@
     'use strict';
     var scale_wswm = 2;
     var wswm$=jQuery.noConflict();
-    wswm$("div.inner").css({"width": "300px","height": "300px"});
+    wswm$("div.inner").css({"width": "320px","height": "300px"});
     wswm$("ul#post-list-posts li").css("width","310px");
     wswm$("a.thumb img").each(function(){
         wswm$(this).css("width",wswm$(this).width()*2);
