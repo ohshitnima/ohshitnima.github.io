@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         图站放大li
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.1
 // @description  try to take over the world!
 // @author       You
 // @match        https://yande.re/post*
-// @match        *konachan.com/post*
+// @match        https://konachan.com/post*
 // @match        *konachan.net/post*
 // @grant        none
 // @updateURL    https://ohshitnima.github.io/图站放大li.user.js
