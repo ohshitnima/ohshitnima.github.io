@@ -27,7 +27,7 @@
         wswm$("div.content").css("width","80%");
         content_width=wswm$("div.content").width();
         int_num = (content_width-content_width%320)/320;
-        scale_wswm = content_width/640;
+        scale_wswm = content_width/320;
     }
     else{
         scale_wswm= 2+(content_width%320)/(int_num*320);
